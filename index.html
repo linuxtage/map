@@ -1,67 +1,173 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Grazer Linuxtage Venue Map</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <head>
+    <title>Grazer Linuxtage Venue Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/>
-  <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-   crossorigin=""></script>
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
 
-<!--
+    <!--
   <script src="leaflet-hash.js"></script>
 
   <script src='L.Control.Locate.mine.js'></script>
 -->
+  </head>
+  <body>
+    <noscript>
+      <br />
+      <hr />
+      <br />
+      <h3>Thanks for your privacy-awareness and disabled JavaScript!</h3>
+      <p>
+        Unfortunately, this interactive map only works with JavaScript enabled -
+        please add an exception for transformap.co!
+      </p>
+    </noscript>
 
-</head>
-<body>
+    <div id="mapcontent">
+      <div id="map"></div>
+    </div>
 
-<noscript>
-  <br><hr><br>
-  <h3>Thanks for your privacy-awareness and disabled JavaScript!</h3>
-  <p>Unfortunately, this interactive map only works with JavaScript enabled - please add an exception for transformap.co!</p>
-</noscript>
+    <script>
+      var done = 4,
+        ok = 200;
+      var mymap = L.map('map').setView([47.0585, 15.4609], 18);
 
-<div id="mapcontent">
-  <div id="map"></div>
-</div>
+      var background = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+          attribution:
+            'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+          maxZoom: 20,
+          maxNativeZoom: 19
+        }
+      ).addTo(mymap);
+      background.setOpacity(0.5);
 
-<script>
+      function fillPopup(layer) {
+        var tags = layer.feature.properties;
+        console.log(tags);
 
-		var mymap = L.map('map').setView([47.0585, 15.4609], 18);
+        var displayed_tags = ['name', 'level', 'ref'];
 
-		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-			maxZoom: 20,
-			maxNativeZoom: 19 ,
-		}).addTo(mymap);
+        var content = '<table>';
+        for (var key in tags) {
+          if (tags.hasOwnProperty(key)) {
+            var value = tags[key];
+						console.log(value);
+            if (displayed_tags.indexOf(key) != -1) {
+              content += '<tr>';
+              content += '<td>' + key + ': </td>';
+              content += '<td>' + value + '</td>';
+              content += '</tr>';
+            }
+          }
+        }
+				content += '</table>';
 
-	var http_request_buildings = new XMLHttpRequest();
-	http_request_buildings.open("GET", 'https://raw.githubusercontent.com/linuxtage/map/master/geodata/buildings.geojson', true);
-	http_request_buildings.onreadystatechange = function () {
-	  var done = 4, ok = 200;
-		if (http_request_buildings.readyState === done && http_request_buildings.status === ok) {
-			buildings_geojson = JSON.parse(http_request_buildings.responseText);
-			L.geoJSON(buildings_geojson).addTo(mymap);
-		}
-	}
-	http_request_buildings.send(null);
+        return content;
+      }
 
+      function addBuildings() {
+        // https://leafletjs.com/reference-1.4.0.html#path-option
+        var building_style = {
+          color: '#fed7a5',
+          fillOpacity: 1,
+          stroke: false
+        };
+        var http_request_buildings = new XMLHttpRequest();
+        http_request_buildings.open(
+          'GET',
+          'https://raw.githubusercontent.com/linuxtage/map/master/geodata/buildings.geojson',
+          true
+        );
+        http_request_buildings.onreadystatechange = function() {
+          if (
+            http_request_buildings.readyState === done &&
+            http_request_buildings.status === ok
+          ) {
+            var buildings_geojson = JSON.parse(
+              http_request_buildings.responseText
+            );
+            L.geoJSON(buildings_geojson, {
+              pointToLayer: function(feature, latlng) {
+                // remove tagged nodes
+                return null;
+              },
+              style: building_style
+            }).addTo(mymap);
+          }
+        };
+        http_request_buildings.send(null);
+      }
 
-//     var hash = new L.Hash(map); // Leaflet persistent Url Hash function
+      function addRooms() {
+        var room_style = {
+          color: '#000',
+          fillColor: '#FFF',
+          weight: 2
+        };
+        var http_request_rooms = new XMLHttpRequest();
+        http_request_rooms.open(
+          'GET',
+          'https://raw.githubusercontent.com/linuxtage/map/master/geodata/rooms.geojson',
+          true
+        );
+        http_request_rooms.onreadystatechange = function() {
+          if (
+            http_request_rooms.readyState === done &&
+            http_request_rooms.status === ok
+          ) {
+            var rooms_geojson = JSON.parse(http_request_rooms.responseText);
+            L.geoJSON(rooms_geojson, {
+              pointToLayer: function(feature, latlng) {
+                // remove tagged nodes
+                return null;
+              },
+              onEachFeature: function(feature, layer) {
 
-		// addLocate();
-		// L.control.scale({imperial: false}).addTo(map);
-		// L.control.mousePosition().addTo(map);
+								tooltip_options = {
+                  permanent: true,
+                  direction: 'center'
+                }
+								offset_rooms = ['HS i3', 'HS i4'];
+								if(offset_rooms.indexOf(feature.properties.name) > -1) {
+									console.log('HS i3/4 found');
+									// tooltip_options['offset'] = L.Point(0,0);
+									tooltip_options['direction'] = 'bottom';
+								}
+                layer.bindTooltip(feature.properties.name, tooltip_options);
+                layer.bindPopup(fillPopup);
+              },
+              style: room_style
+            }).addTo(mymap);
+          }
+        };
+        http_request_rooms.send(null);
+      }
 
-</script>
-</body>
+      setTimeout(addBuildings, 0100);
+      setTimeout(addRooms, 1000);
+
+      //     var hash = new L.Hash(map); // Leaflet persistent Url Hash function
+
+      // addLocate();
+      // L.control.scale({imperial: false}).addTo(map);
+      // L.control.mousePosition().addTo(map);
+    </script>
+  </body>
 </html>

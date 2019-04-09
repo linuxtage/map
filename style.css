@@ -3,8 +3,17 @@ margin: 0;
 padding: 0;
 }
 
-#mapcontent, #map { 
+#mapcontent, #map {
   height: 100vh;
   width: 100vw;
  }
 
+.leaflet-tooltip {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.leaflet-tooltip-bottom::before {
+  border: 0;
+}
