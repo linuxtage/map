@@ -44,6 +44,18 @@
 			maxNativeZoom: 19 ,
 		}).addTo(mymap);
 
+	var http_request_buildings = new XMLHttpRequest();
+	http_request_buildings.open("GET", 'https://raw.githubusercontent.com/linuxtage/map/master/geodata/buildings.geojson', true);
+	http_request_buildings.onreadystatechange = function () {
+	  var done = 4, ok = 200;
+		if (http_request_buildings.readyState === done && http_request_buildings.status === ok) {
+			buildings_geojson = JSON.parse(http_request_buildings.responseText);
+			L.geoJSON(buildings_geojson).addTo(mymap);
+		}
+	}
+	http_request_buildings.send(null);
+
+
 //     var hash = new L.Hash(map); // Leaflet persistent Url Hash function
 
 		// addLocate();
