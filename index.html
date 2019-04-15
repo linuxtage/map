@@ -301,12 +301,33 @@
               iconAnchor: [92 / 12, 150 / 12],
               popupAnchor: [0, 0]
             });
+            var foodIcon = new L.Icon({
+              iconUrl: 'assets/food.png',
+              iconSize: [92 / 6, 150 / 6],
+              iconAnchor: [92 / 12, 150 / 12],
+              popupAnchor: [0, 0]
+            });
+            var wcIcon = new L.Icon({
+              iconUrl: 'assets/toilet.png',
+              iconSize: [92 / 6, 150 / 6],
+              iconAnchor: [92 / 12, 150 / 12],
+              popupAnchor: [0, 0]
+            });
             way_style = { weight: 0 };
             L.geoJSON(buildings_geojson, {
               pointToLayer: function(feature, latlng) {
                 //  L.Marker(latlng);
                 if (feature.properties['highway'] === 'elevator') {
                   return L.marker(latlng, { icon: elevatorIcon });
+                }
+                if (feature.properties['amenity'] === 'fast_food') {
+                  console.log('food found');
+                  return L.marker(latlng, { icon: foodIcon });
+                }
+                if (feature.properties['amenity'] === 'toilets') {
+                  console.log('wc found');
+
+                  return L.marker(latlng, { icon: wcIcon });
                 }
                 return null;
               },
