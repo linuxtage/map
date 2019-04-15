@@ -1025,7 +1025,7 @@
         {
             "type": "Feature",
             "properties": {
-                "highway": "corridor",
+                "highway": "steps",
                 "incline": "up",
                 "indoor": "corridor",
                 "level": "1;1.5"
@@ -1922,7 +1922,7 @@
         {
             "type": "Feature",
             "properties": {
-                "highway": "corridor",
+                "highway": "steps",
                 "incline": "up",
                 "indoor": "corridor",
                 "level": "0.5;1"
@@ -3824,7 +3824,7 @@
         {
             "type": "Feature",
             "properties": {
-                "highway": "corridor",
+                "highway": "steps",
                 "incline": "up",
                 "indoor": "corridor",
                 "level": "1.5;2"
@@ -4823,7 +4823,7 @@
         {
             "type": "Feature",
             "properties": {
-                "highway": "corridor",
+                "highway": "steps",
                 "incline": "up",
                 "indoor": "corridor",
                 "level": "0;0.5"
