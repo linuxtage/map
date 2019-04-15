@@ -5458,6 +5458,19 @@
         {
             "type": "Feature",
             "properties": {
+                "amenity": "fast_food"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45957550272,
+                    47.05856294176
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "entrance": "main",
                 "wheelchair": "yes"
             },
