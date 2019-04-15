@@ -111,8 +111,13 @@
               onEachFeature: function(feature, layer) {
                 tooltip_options = {
                   permanent: true,
-                  direction: 'center'
+                  direction: 'center',
+                  className: 'buildingstooltip'
                 };
+                offset_top = ['12'];
+                // if (offset_top.indexOf(feature.properties.name) > -1) {
+                  tooltip_options['className'] = 'buildingstooltip b' + feature.properties.name;
+                // }
                 layer.bindTooltip(feature.properties.name, tooltip_options);
               },
               style: building_style

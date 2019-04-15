@@ -17,3 +17,24 @@ padding: 0;
 .leaflet-tooltip-bottom::before {
   border: 0;
 }
+
+.buildingstooltip {
+  /* background: green; */
+  font-size: 2em;
+}
+
+.buildingstooltip.b12 {
+  padding: 0 20px 50px 0;
+}
+
+.buildingstooltip.b16b {
+  padding: 30px 0 0 30px;
+}
+
+.buildingstooltip.b18, .buildingstooltip.b25f {
+  padding: 60px 0 0 0;
+}
+
+.buildingstooltip.b25d {
+  padding: 50px 0 0 50px;
+}
