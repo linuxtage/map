@@ -159,7 +159,25 @@
                 layer.bindTooltip(feature.properties.name, tooltip_options);
                 layer.bindPopup(fillPopup);
               },
-              style: room_style
+              style: function(feature) {
+                room_style = { color: '#000', weight: 2 };
+                switch (feature.properties.level) {
+                  case '-1':
+                    room_style.fillColor = '#8388fe';
+                    return room_style;
+                  case '0':
+                    room_style.fillColor = '#0cfe01';
+                    return room_style;
+                  case '1':
+                    room_style.fillColor = '#fdf501';
+                    return room_style;
+                  case '2':
+                    room_style.fillColor = '#fd9402';
+                    return room_style;
+                }
+								console.log('element on other layer', feature.properties);
+
+              }
             }).addTo(mymap);
           }
         };
