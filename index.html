@@ -116,7 +116,8 @@
                 };
                 offset_top = ['12'];
                 // if (offset_top.indexOf(feature.properties.name) > -1) {
-                  tooltip_options['className'] = 'buildingstooltip b' + feature.properties.name;
+                tooltip_options['className'] =
+                  'buildingstooltip b' + feature.properties.name;
                 // }
                 layer.bindTooltip(feature.properties.name, tooltip_options);
               },
@@ -180,8 +181,7 @@
                     room_style.fillColor = '#fd9402';
                     return room_style;
                 }
-								console.log('element on other layer', feature.properties);
-
+                console.log('element on other layer', feature.properties);
               }
             }).addTo(mymap);
           }
@@ -189,8 +189,139 @@
         http_request_rooms.send(null);
       }
 
+      function addWays() {
+        // https://leafletjs.com/reference-1.4.0.html#path-option
+        var way_style = {
+          color: 'black',
+          fillOpacity: 0
+        };
+        var http_request_ways = new XMLHttpRequest();
+        http_request_ways.open(
+          'GET',
+          'https://raw.githubusercontent.com/linuxtage/map/master/geodata/ways.geojson',
+          true
+        );
+        http_request_ways.onreadystatechange = function() {
+          if (
+            http_request_ways.readyState === done &&
+            http_request_ways.status === ok
+          ) {
+            var ways_geojson = JSON.parse(http_request_ways.responseText);
+            L.geoJSON(ways_geojson, {
+              pointToLayer: function(feature, latlng) {
+                /*
+                if (feature.properties['highway'] === 'elevator') {
+                  console.log('elevator at ', latlng);
+
+                  var markeroptions = {
+                    icon: L.icon({
+                      iconUrl: 'assets/elevator.png',
+                      iconSize: [92/2, 150/2],
+                      iconAnchor: [92/4, 150/4],
+                      popupAnchor: [0, 0]
+                    })
+                  };
+                  return L.Marker(latlng, markeroptions);
+                }
+                // remove tagged nodes
+                console.log(latlng);
+*/
+                //             return L.Marker(latlng);
+                return null;
+              },
+              style: function(feature) {
+                if (feature.properties['amenity'] === 'arts_centre') {
+                  // random tag for entrance arrows
+                  return { color: 'red', weight: 2 };
+                }
+                if (feature.properties['highway'] === 'steps') {
+                  return { color: 'red', weight: 2, dashArray: '4 3' };
+                }
+
+                way_style = { color: '#000', weight: 2 };
+                if (feature.properties['highway'] === 'corridor') {
+                  way_style.dashArray = '4';
+                }
+                switch (feature.properties.level) {
+                  case 'outdoor':
+                    way_style.color = '#00980c';
+                    return way_style;
+                  case '-1':
+                  case '-0.5':
+                    way_style.color = '#8388fe';
+                    return way_style;
+                  case '0':
+                  case '0.5':
+                  case '0;0.5':
+                    way_style.color = '#0cfe01';
+                    return way_style;
+                  case '1':
+                  case '1.5':
+                    way_style.color = '#fdf501';
+                    return way_style;
+                  case '2':
+                    way_style.color = '#fd9402';
+                    return way_style;
+                }
+                console.log('element on other layer', feature.properties);
+              }
+            }).addTo(mymap);
+          }
+        };
+        http_request_ways.send(null);
+      }
+
+      function addPoints() {
+        var http_request_buildings = new XMLHttpRequest();
+        http_request_buildings.open(
+          'GET',
+          'https://raw.githubusercontent.com/linuxtage/map/master/geodata/ways.geojson',
+          true
+        );
+        http_request_buildings.onreadystatechange = function() {
+          if (
+            http_request_buildings.readyState === done &&
+            http_request_buildings.status === ok
+          ) {
+            var buildings_geojson = JSON.parse(
+              http_request_buildings.responseText
+            );
+
+            var geojsonMarkerOptions = {
+              radius: 8,
+              fillColor: '#ff7800',
+              color: '#000',
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            };
+            var elevatorIcon = new L.Icon({
+              iconUrl: 'assets/elevator.png',
+              iconSize: [92 / 6, 150 / 6],
+              iconAnchor: [92 / 12, 150 / 12],
+              popupAnchor: [0, 0]
+            });
+            way_style = { weight: 0 };
+            L.geoJSON(buildings_geojson, {
+              pointToLayer: function(feature, latlng) {
+                //  L.Marker(latlng);
+                if (feature.properties['highway'] === 'elevator') {
+                  return L.marker(latlng, { icon: elevatorIcon });
+                }
+                return null;
+              },
+              style: way_style
+            }).addTo(mymap);
+          }
+        };
+        http_request_buildings.send(null);
+      }
+
+      // to ensure correct stacking of layers
       setTimeout(addBuildings, 0100);
       setTimeout(addRooms, 1000);
+      setTimeout(addWays, 2000);
+      setTimeout(addPoints, 3000);
 
       //     var hash = new L.Hash(map); // Leaflet persistent Url Hash function
 
@@ -198,5 +329,6 @@
       // L.control.scale({imperial: false}).addTo(map);
       // L.control.mousePosition().addTo(map);
     </script>
+    <img src="Legende.png" class="legend" />
   </body>
 </html>
