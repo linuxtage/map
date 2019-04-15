@@ -68,7 +68,7 @@
         for (var key in tags) {
           if (tags.hasOwnProperty(key)) {
             var value = tags[key];
-						console.log(value);
+            console.log(value);
             if (displayed_tags.indexOf(key) != -1) {
               content += '<tr>';
               content += '<td>' + key + ': </td>';
@@ -77,7 +77,7 @@
             }
           }
         }
-				content += '</table>';
+        content += '</table>';
 
         return content;
       }
@@ -139,21 +139,38 @@
                 return null;
               },
               onEachFeature: function(feature, layer) {
-
-								tooltip_options = {
+                tooltip_options = {
                   permanent: true,
                   direction: 'center'
+                };
+                offset_rooms = ['HS i3', 'HS i4'];
+                if (offset_rooms.indexOf(feature.properties.name) > -1) {
+                  console.log('HS i3/4 found');
+                  // tooltip_options['offset'] = L.Point(0,0);
+                  tooltip_options['direction'] = 'bottom';
                 }
-								offset_rooms = ['HS i3', 'HS i4'];
-								if(offset_rooms.indexOf(feature.properties.name) > -1) {
-									console.log('HS i3/4 found');
-									// tooltip_options['offset'] = L.Point(0,0);
-									tooltip_options['direction'] = 'bottom';
-								}
                 layer.bindTooltip(feature.properties.name, tooltip_options);
                 layer.bindPopup(fillPopup);
               },
-              style: room_style
+              style: function(feature) {
+                room_style = { color: '#000', weight: 2 };
+                switch (feature.properties.level) {
+                  case '-1':
+                    room_style.fillColor = '#8388fe';
+                    return room_style;
+                  case '0':
+                    room_style.fillColor = '#0cfe01';
+                    return room_style;
+                  case '1':
+                    room_style.fillColor = '#fdf501';
+                    return room_style;
+                  case '2':
+                    room_style.fillColor = '#fd9402';
+                    return room_style;
+                }
+								console.log('element on other layer', feature.properties);
+
+              }
             }).addTo(mymap);
           }
         };
