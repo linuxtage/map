@@ -311,7 +311,8 @@
             "type": "Feature",
             "properties": {
                 "highway": "residential",
-                "name": "Inffeldgasse"
+                "name": "Inffeldgasse",
+                "level": "outdoor"
             },
             "geometry": {
                 "type": "LineString",
@@ -378,27 +379,6 @@
                     [
                         15.45901700000,
                         47.05852800000
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "highway": "corridor",
-                "indoor": "corridor",
-                "level": "0"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        15.45929530000,
-                        47.05873980000
-                    ],
-                    [
-                        15.45932970000,
-                        47.05875280000
                     ]
                 ]
             }
@@ -708,39 +688,6 @@
                     [
                         15.46040530000,
                         47.05862440000
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "highway": "corridor",
-                "indoor": "corridor",
-                "level": "1"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        15.45926620000,
-                        47.05880880000
-                    ],
-                    [
-                        15.45924090000,
-                        47.05879820000
-                    ],
-                    [
-                        15.45927190000,
-                        47.05876410000
-                    ],
-                    [
-                        15.45930140000,
-                        47.05872970000
-                    ],
-                    [
-                        15.45933880000,
-                        47.05874210000
                     ]
                 ]
             }
@@ -2786,31 +2733,6 @@
         {
             "type": "Feature",
             "properties": {
-                "highway": "corridor",
-                "indoor": "corridor",
-                "level": "0.5"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        15.45937700000,
-                        47.05875690000
-                    ],
-                    [
-                        15.45937890000,
-                        47.05876540000
-                    ],
-                    [
-                        15.45936760000,
-                        47.05876790000
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "door": "hinged",
                 "indoor": "yes",
                 "level": "1",
@@ -2869,35 +2791,6 @@
                     [
                         15.45794750000,
                         47.05856930000
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "highway": "corridor",
-                "indoor": "corridor",
-                "level": "0.5"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        15.45927190000,
-                        47.05876410000
-                    ],
-                    [
-                        15.45939140000,
-                        47.05881170000
-                    ],
-                    [
-                        15.45935860000,
-                        47.05884550000
-                    ],
-                    [
-                        15.45934820000,
-                        47.05884100000
                     ]
                 ]
             }
@@ -3835,7 +3728,8 @@
             "type": "Feature",
             "properties": {
                 "foot": "yes",
-                "highway": "service"
+                "highway": "service",
+                "level": "outdoor"
             },
             "geometry": {
                 "type": "LineString",
@@ -4220,28 +4114,6 @@
                     [
                         15.45904310000,
                         47.05809790000
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "highway": "steps",
-                "incline": "up",
-                "indoor": "yes",
-                "level": "0.5;1"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        15.45937700000,
-                        47.05875690000
-                    ],
-                    [
-                        15.45933880000,
-                        47.05874210000
                     ]
                 ]
             }
@@ -6102,28 +5974,6 @@
                     [
                         15.45968154662,
                         47.05894759000
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "highway": "steps",
-                "incline": "up",
-                "indoor": "yes",
-                "level": "0;0.5"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        15.45932970000,
-                        47.05875280000
-                    ],
-                    [
-                        15.45936760000,
-                        47.05876790000
                     ]
                 ]
             }
