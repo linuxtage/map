@@ -1,18 +1,23 @@
-body, * {
-margin: 0;
-padding: 0;
+body,
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#mapcontent, #map {
+#mapcontent,
+#map {
   height: 100vh;
   width: 100vw;
- }
+}
 
 .leaflet-tooltip {
   padding: 0;
   border: 0;
   background-color: transparent;
   box-shadow: none;
+  text-shadow: 1px 1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF,
+    -1px -1px 0 #FFF, 1px 0px 0 #FFF, 0px 1px 0 #FFF,
+    -1px 0px 0 #FFF, 0px -1px 0 #FFF;
 }
 .leaflet-tooltip-bottom::before {
   border: 0;
@@ -21,6 +26,10 @@ padding: 0;
 .buildingstooltip {
   /* background: green; */
   font-size: 2em;
+
+  text-shadow: 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF,
+    -2px -2px 0 #FFF, 2px 0px 0 #FFF, 0px 2px 0 #FFF,
+    -2px 0px 0 #FFF, 0px -2px 0 #FFF;
 }
 
 .buildingstooltip.b12 {
@@ -31,7 +40,8 @@ padding: 0;
   padding: 30px 0 0 30px;
 }
 
-.buildingstooltip.b18, .buildingstooltip.b25f {
+.buildingstooltip.b18,
+.buildingstooltip.b25f {
   padding: 60px 0 0 0;
 }
 
@@ -45,8 +55,8 @@ padding: 0;
 
 .legend {
   position: absolute;
-  top:0.5em;
-  left:2em;
+  top: 0.5em;
+  left: 2em;
   width: 20vw;
   max-width: 300px;
   min-width: 3cm;

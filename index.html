@@ -166,7 +166,7 @@
                 layer.bindPopup(fillPopup);
               },
               style: function(feature) {
-                room_style = { color: '#000', weight: 2 };
+                room_style = { color: '#000', weight: 2, fillOpacity: 0.7 };
                 switch (feature.properties.level) {
                   case '-1':
                     room_style.fillColor = '#8388fe';
@@ -209,24 +209,6 @@
             var ways_geojson = JSON.parse(http_request_ways.responseText);
             L.geoJSON(ways_geojson, {
               pointToLayer: function(feature, latlng) {
-                /*
-                if (feature.properties['highway'] === 'elevator') {
-                  console.log('elevator at ', latlng);
-
-                  var markeroptions = {
-                    icon: L.icon({
-                      iconUrl: 'assets/elevator.png',
-                      iconSize: [92/2, 150/2],
-                      iconAnchor: [92/4, 150/4],
-                      popupAnchor: [0, 0]
-                    })
-                  };
-                  return L.Marker(latlng, markeroptions);
-                }
-                // remove tagged nodes
-                console.log(latlng);
-*/
-                //             return L.Marker(latlng);
                 return null;
               },
               style: function(feature) {
