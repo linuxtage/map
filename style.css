@@ -45,8 +45,10 @@ padding: 0;
 
 .legend {
   position: absolute;
-  top:2em;
-  left:4em;
+  top:0.5em;
+  left:2em;
   width: 20vw;
+  max-width: 300px;
+  min-width: 3cm;
   z-index: 100;
 }
