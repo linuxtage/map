@@ -100,7 +100,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "-1"
+                "level": "-1",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
@@ -618,7 +619,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "0"
+                "level": "0",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
@@ -988,7 +990,8 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "arts_centre"
+                "amenity": "arts_centre",
+                "name": "Haupteingang Inffeldgasse 16b"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1667,7 +1670,8 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "arts_centre"
+                "amenity": "arts_centre",
+                "name": "Haupteingang Inffeldgasse 12"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2712,7 +2716,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "0"
+                "level": "0",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
@@ -2991,7 +2996,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "1"
+                "level": "1",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
@@ -4063,7 +4069,8 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "arts_centre"
+                "amenity": "arts_centre",
+                "name": "Eingang \"Fleki\" Kinderbetreuung"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4292,7 +4299,8 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "arts_centre"
+                "amenity": "arts_centre",
+                "name": "Haupteingang Inffeldgasse 18"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4452,7 +4460,8 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "arts_centre"
+                "amenity": "arts_centre",
+                "name": "Haupteingang Inffeldgasse 25"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4497,7 +4506,8 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "arts_centre"
+                "amenity": "arts_centre",
+                "name": "Haupteingang Inffeldgasse 10"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4696,7 +4706,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "0"
+                "level": "0",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
@@ -4858,7 +4869,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "2"
+                "level": "2",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
@@ -5467,7 +5479,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "0"
+                "level": "0",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
@@ -5511,7 +5524,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "0"
+                "level": "0",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
@@ -5524,7 +5538,8 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "fast_food"
+                "amenity": "fast_food",
+                "name": "Food Trucks"
             },
             "geometry": {
                 "type": "Point",
@@ -5777,7 +5792,8 @@
             "properties": {
                 "amenity": "toilets",
                 "indoor": "yes",
-                "level": "0"
+                "level": "0",
+                "name": "Toilette"
             },
             "geometry": {
                 "type": "Point",
