@@ -869,9 +869,10 @@
                 "area": "yes",
                 "amenity": "community_centre",
                 "level": "2",
-                "name": "Studienzentrum",
                 "indoor": "room",
-                "room": "lecture_hall"
+                "room": "lecture_hall",
+                "alt_name": "Studienzentrum",
+                "name": "SZ02057"
             },
             "geometry": {
                 "type": "Polygon",
