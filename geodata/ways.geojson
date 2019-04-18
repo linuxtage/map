@@ -1204,7 +1204,8 @@
         {
             "type": "Feature",
             "properties": {
-                "highway": "elevator"
+                "highway": "elevator",
+                "name": "Aufzug"
             },
             "geometry": {
                 "type": "Point",
@@ -1716,7 +1717,8 @@
         {
             "type": "Feature",
             "properties": {
-                "highway": "elevator"
+                "highway": "elevator",
+                "name": "Aufzug"
             },
             "geometry": {
                 "type": "Point",
@@ -4149,7 +4151,8 @@
             "type": "Feature",
             "properties": {
                 "highway": "elevator",
-                "level": "0;1"
+                "level": "0;1",
+                "name": "Aufzug"
             },
             "geometry": {
                 "type": "Point",
@@ -4271,7 +4274,8 @@
         {
             "type": "Feature",
             "properties": {
-                "highway": "elevator"
+                "highway": "elevator",
+                "name": "Aufzug"
             },
             "geometry": {
                 "type": "Point",
@@ -4599,7 +4603,8 @@
             "type": "Feature",
             "properties": {
                 "highway": "elevator",
-                "level": "-2;-1;0;1;2"
+                "level": "-2;-1;0;1;2",
+                "name": "Aufzug"
             },
             "geometry": {
                 "type": "Point",
@@ -5940,7 +5945,8 @@
             "type": "Feature",
             "properties": {
                 "highway": "elevator",
-                "level": "-1;0;1;2"
+                "level": "-1;0;1;2",
+                "name": "Aufzug"
             },
             "geometry": {
                 "type": "Point",
