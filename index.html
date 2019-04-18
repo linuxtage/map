@@ -56,15 +56,17 @@
           maxNativeZoom: 19
         }
       ).addTo(mymap);
-      background.setOpacity(0.5);
+      background.setOpacity(0.60);
 
       function fillPopup(layer) {
         var tags = layer.feature.properties;
         console.log(tags);
 
-        var displayed_tags = ['name', 'level', 'ref'];
+        var displayed_tags = ['level', 'ref'];
 
-        var content = '<table>';
+        var title = tags['name'] ? '<h3>' + tags['name'] + '</h3>' : '';
+
+        var content = title + '<table>';
         for (var key in tags) {
           if (tags.hasOwnProperty(key)) {
             var value = tags[key];
@@ -312,6 +314,9 @@
                   return L.marker(latlng, { icon: wcIcon });
                 }
                 return null;
+              },
+              onEachFeature: function(feature, layer) {
+                layer.bindPopup(fillPopup);
               },
               style: way_style
             }).addTo(mymap);

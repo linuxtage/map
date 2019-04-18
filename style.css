@@ -10,14 +10,18 @@ body,
   width: 100vw;
 }
 
+.leaflet-popup-content tr:first-child td{
+  padding-top: 1em;
+}
+
 .leaflet-tooltip {
   padding: 0;
   border: 0;
   background-color: transparent;
   box-shadow: none;
-  text-shadow: 1px 1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF,
-    -1px -1px 0 #FFF, 1px 0px 0 #FFF, 0px 1px 0 #FFF,
-    -1px 0px 0 #FFF, 0px -1px 0 #FFF;
+  text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    -1px -1px 0 #fff, 1px 0px 0 #fff, 0px 1px 0 #fff, -1px 0px 0 #fff,
+    0px -1px 0 #fff;
 }
 .leaflet-tooltip-bottom::before {
   border: 0;
@@ -27,9 +31,9 @@ body,
   /* background: green; */
   font-size: 2em;
 
-  text-shadow: 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF,
-    -2px -2px 0 #FFF, 2px 0px 0 #FFF, 0px 2px 0 #FFF,
-    -2px 0px 0 #FFF, 0px -2px 0 #FFF;
+  text-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    -2px -2px 0 #fff, 2px 0px 0 #fff, 0px 2px 0 #fff, -2px 0px 0 #fff,
+    0px -2px 0 #fff;
 }
 
 .buildingstooltip.b12 {
