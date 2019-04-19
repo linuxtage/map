@@ -5309,31 +5309,6 @@
             "properties": {
                 "highway": "corridor",
                 "indoor": "corridor",
-                "level": "1"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        15.46088770000,
-                        47.05818110000
-                    ],
-                    [
-                        15.46087200000,
-                        47.05820160000
-                    ],
-                    [
-                        15.46081740000,
-                        47.05818080000
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "highway": "corridor",
-                "indoor": "corridor",
                 "level": "0"
             },
             "geometry": {
