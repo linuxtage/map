@@ -6,52 +6,6 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "88",
-                "capacity": "48",
-                "indoor": "room",
-                "level": "1",
-                "name": "HS i5",
-                "ref": "MD01160F",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4032"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.46069491135,
-                            47.05809219041
-                        ],
-                        [
-                            15.46061091135,
-                            47.05805989042
-                        ],
-                        [
-                            15.46068081135,
-                            47.05797559044
-                        ],
-                        [
-                            15.46076481135,
-                            47.05800799043
-                        ],
-                        [
-                            15.46071591135,
-                            47.05806689041
-                        ],
-                        [
-                            15.46069491135,
-                            47.05809219041
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "door": "hinged",
                 "indoor": "yes",
                 "level": "0.5",
@@ -1341,6 +1295,52 @@
                 "coordinates": [
                     15.45880030000,
                     47.05829340000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "88",
+                "capacity": "48",
+                "indoor": "room",
+                "level": "1",
+                "name": "HS i5",
+                "ref": "MD01160F",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4032"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.46069491135,
+                            47.05809219041
+                        ],
+                        [
+                            15.46061091135,
+                            47.05805989042
+                        ],
+                        [
+                            15.46068081135,
+                            47.05797559044
+                        ],
+                        [
+                            15.46076481135,
+                            47.05800799043
+                        ],
+                        [
+                            15.46071591135,
+                            47.05806689041
+                        ],
+                        [
+                            15.46069491135,
+                            47.05809219041
+                        ]
+                    ]
                 ]
             }
         },
