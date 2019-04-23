@@ -8,338 +8,6 @@
             "properties": {
                 "amenity": "community_centre",
                 "area": "yes",
-                "area_m2": "53",
-                "capacity": "36",
-                "indoor": "room",
-                "level": "0",
-                "name": "HS i4",
-                "ref": "MDEG160G",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4021"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.46076101032,
-                            47.05800222511
-                        ],
-                        [
-                            15.46071941032,
-                            47.05805182511
-                        ],
-                        [
-                            15.46070921032,
-                            47.05806402511
-                        ],
-                        [
-                            15.46062691032,
-                            47.05803202511
-                        ],
-                        [
-                            15.46067871032,
-                            47.05797012511
-                        ],
-                        [
-                            15.46076101032,
-                            47.05800222511
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "alt_name": "Hörsaal ISW",
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "97.95",
-                "capacity": "60",
-                "indoor": "room",
-                "level": "0",
-                "name": "MFEG210",
-                "ref": "MFEG210",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2088"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.45984390000,
-                            47.05782170000
-                        ],
-                        [
-                            15.45985950000,
-                            47.05782780000
-                        ],
-                        [
-                            15.45990970000,
-                            47.05784740000
-                        ],
-                        [
-                            15.45995360000,
-                            47.05786460000
-                        ],
-                        [
-                            15.45988880000,
-                            47.05794140000
-                        ],
-                        [
-                            15.45977910000,
-                            47.05789850000
-                        ],
-                        [
-                            15.45984390000,
-                            47.05782170000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "indoor": "yes",
-                "level": "0"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.45753760000,
-                    47.05831180000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "alt_name": "SIEMENS Hörsaal",
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "117.78",
-                "capacity": "87",
-                "indoor": "room",
-                "level": "-1",
-                "name": "HS i11",
-                "ref": "ICK1002H",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=5785"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.45897770000,
-                            47.05864110000
-                        ],
-                        [
-                            15.45895090000,
-                            47.05863060000
-                        ],
-                        [
-                            15.45894190000,
-                            47.05864120000
-                        ],
-                        [
-                            15.45892050000,
-                            47.05863280000
-                        ],
-                        [
-                            15.45889910000,
-                            47.05862430000
-                        ],
-                        [
-                            15.45890880000,
-                            47.05861290000
-                        ],
-                        [
-                            15.45888100000,
-                            47.05860200000
-                        ],
-                        [
-                            15.45877070000,
-                            47.05873200000
-                        ],
-                        [
-                            15.45886800000,
-                            47.05877030000
-                        ],
-                        [
-                            15.45897770000,
-                            47.05864110000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "indoor": "yes",
-                "level": "1",
-                "wheelchair": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.46088770000,
-                    47.05818110000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "yes",
-                "indoor": "yes",
-                "level": "1"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.46027820000,
-                    47.05868290000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "76",
-                "capacity": "36",
-                "indoor": "room",
-                "level": "-1",
-                "name": "HS i14",
-                "ref": "HSK1008",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2202"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.45880640000,
-                            47.05829580000
-                        ],
-                        [
-                            15.45880030000,
-                            47.05829340000
-                        ],
-                        [
-                            15.45864920000,
-                            47.05823380000
-                        ],
-                        [
-                            15.45861280000,
-                            47.05827670000
-                        ],
-                        [
-                            15.45877000000,
-                            47.05833870000
-                        ],
-                        [
-                            15.45880640000,
-                            47.05829580000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "alt_name": "Studienzentrum",
-                "amenity": "community_centre",
-                "area": "yes",
-                "indoor": "room",
-                "level": "2",
-                "name": "SZ02057",
-                "ref": "SZ02057",
-                "room": "lecture_hall"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.45993120000,
-                            47.05869880000
-                        ],
-                        [
-                            15.45999895748,
-                            47.05872214053
-                        ],
-                        [
-                            15.46002779122,
-                            47.05873081997
-                        ],
-                        [
-                            15.46009752866,
-                            47.05874635159
-                        ],
-                        [
-                            15.46012602713,
-                            47.05875229016
-                        ],
-                        [
-                            15.46019844677,
-                            47.05876005597
-                        ],
-                        [
-                            15.46022761580,
-                            47.05876211162
-                        ],
-                        [
-                            15.46021621641,
-                            47.05882035516
-                        ],
-                        [
-                            15.46018738266,
-                            47.05881921313
-                        ],
-                        [
-                            15.46011563357,
-                            47.05880962008
-                        ],
-                        [
-                            15.46008679982,
-                            47.05880550878
-                        ],
-                        [
-                            15.46001639184,
-                            47.05878837833
-                        ],
-                        [
-                            15.45998722281,
-                            47.05877969889
-                        ],
-                        [
-                            15.45991950000,
-                            47.05875750000
-                        ],
-                        [
-                            15.45993120000,
-                            47.05869880000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "community_centre",
-                "area": "yes",
                 "area_m2": "88",
                 "capacity": "48",
                 "indoor": "room",
@@ -354,28 +22,28 @@
                 "coordinates": [
                     [
                         [
-                            15.46068820583,
-                            47.05810132677
+                            15.46069491135,
+                            47.05809219041
                         ],
                         [
-                            15.46060420583,
-                            47.05806902679
+                            15.46061091135,
+                            47.05805989042
                         ],
                         [
-                            15.46067410583,
-                            47.05798472682
+                            15.46068081135,
+                            47.05797559044
                         ],
                         [
-                            15.46075810583,
-                            47.05801712681
+                            15.46076481135,
+                            47.05800799043
                         ],
                         [
-                            15.46070920583,
-                            47.05807602678
+                            15.46071591135,
+                            47.05806689041
                         ],
                         [
-                            15.46068820583,
-                            47.05810132677
+                            15.46069491135,
+                            47.05809219041
                         ]
                     ]
                 ]
@@ -386,273 +54,75 @@
             "properties": {
                 "door": "hinged",
                 "indoor": "yes",
-                "level": "-1"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.45918640000,
-                    47.05873730000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "indoor": "yes",
-                "level": "1",
-                "wheelchair": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.46083440000,
-                    47.05816040000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "indoor": "yes",
-                "wheelchair": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.45966401916,
-                    47.05901233080
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "indoor": "yes",
-                "level": "-1"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.45892050000,
-                    47.05863280000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "yes",
-                "indoor": "yes",
-                "level": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.45990172945,
-                    47.05867980000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "307.32",
-                "capacity": "323",
-                "indoor": "room",
-                "level": "-1",
-                "name": "HS i13",
-                "ref": "ICK1120H",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=5787"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.45928920000,
-                            47.05876320000
-                        ],
-                        [
-                            15.45921730000,
-                            47.05873500000
-                        ],
-                        [
-                            15.45920820000,
-                            47.05874580000
-                        ],
-                        [
-                            15.45918640000,
-                            47.05873730000
-                        ],
-                        [
-                            15.45916460000,
-                            47.05872870000
-                        ],
-                        [
-                            15.45917410000,
-                            47.05871740000
-                        ],
-                        [
-                            15.45910350000,
-                            47.05868980000
-                        ],
-                        [
-                            15.45899220000,
-                            47.05881980000
-                        ],
-                        [
-                            15.45896230000,
-                            47.05885600000
-                        ],
-                        [
-                            15.45914890000,
-                            47.05892920000
-                        ],
-                        [
-                            15.45928920000,
-                            47.05876320000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "204",
-                "capacity": "222",
-                "indoor": "room",
-                "level": "1",
-                "name": "HS i7",
-                "ref": "MD01168F",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4030"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.46082060000,
-                            47.05798730000
-                        ],
-                        [
-                            15.46071400000,
-                            47.05811310000
-                        ],
-                        [
-                            15.46072530000,
-                            47.05811760000
-                        ],
-                        [
-                            15.46077730000,
-                            47.05813800000
-                        ],
-                        [
-                            15.46083440000,
-                            47.05816040000
-                        ],
-                        [
-                            15.46083890000,
-                            47.05816220000
-                        ],
-                        [
-                            15.46084670000,
-                            47.05816530000
-                        ],
-                        [
-                            15.46095330000,
-                            47.05803950000
-                        ],
-                        [
-                            15.46082060000,
-                            47.05798730000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "indoor": "yes",
-                "level": "0",
+                "level": "0.5",
                 "wheelchair": "no"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.46071470000,
-                    47.05805250000
+                    15.45973560000,
+                    47.05899870000
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "door": "hinged",
-                "level": "-1",
-                "wheelchair": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.45880030000,
-                    47.05829340000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
+                "alt_name": "LENZING Hörsaal",
                 "amenity": "community_centre",
                 "area": "yes",
-                "area_m2": "57.6",
-                "capacity": "25",
+                "area_m2": "89",
+                "capacity": "80",
                 "indoor": "room",
-                "level": "-1",
-                "name": "HS i15",
-                "ref": "HSK1018",
+                "level": "0",
+                "name": "HS i3",
+                "ref": "MDEG180G",
                 "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2196"
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4015"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            15.45880640000,
-                            47.05829580000
+                            15.46092766613,
+                            47.05807903991
                         ],
                         [
-                            15.45891840000,
-                            47.05833990000
+                            15.46085556613,
+                            47.05816413991
                         ],
                         [
-                            15.45893220000,
-                            47.05834540000
+                            15.46085736613,
+                            47.05816503991
                         ],
                         [
-                            15.45889580000,
-                            47.05838820000
+                            15.46086606613,
+                            47.05816823991
                         ],
                         [
-                            15.45877000000,
-                            47.05833870000
+                            15.46091216613,
+                            47.05818633991
                         ],
                         [
-                            15.45880640000,
-                            47.05829580000
+                            15.46093876613,
+                            47.05819693991
+                        ],
+                        [
+                            15.46101316613,
+                            47.05810893991
+                        ],
+                        [
+                            15.46101916613,
+                            47.05810193991
+                        ],
+                        [
+                            15.46093596613,
+                            47.05806923991
+                        ],
+                        [
+                            15.46092766613,
+                            47.05807903991
                         ]
                     ]
                 ]
@@ -725,6 +195,21 @@
             "type": "Feature",
             "properties": {
                 "door": "hinged",
+                "level": "0.5",
+                "wheelchair": "yes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45913960000,
+                    47.05819200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
                 "indoor": "yes",
                 "level": "1",
                 "wheelchair": "yes"
@@ -742,13 +227,454 @@
             "properties": {
                 "door": "hinged",
                 "indoor": "yes",
+                "level": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45753760000,
+                    47.05831180000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "76.2",
+                "indoor": "room",
+                "level": "1",
+                "name": "HF01092",
+                "ref": "HF01092",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2167"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.45961615328,
+                            47.05906934846
+                        ],
+                        [
+                            15.45953146784,
+                            47.05903558243
+                        ],
+                        [
+                            15.45960486566,
+                            47.05894815113
+                        ],
+                        [
+                            15.45966285058,
+                            47.05897074227
+                        ],
+                        [
+                            15.45969003967,
+                            47.05898133524
+                        ],
+                        [
+                            15.45966401916,
+                            47.05901233080
+                        ],
+                        [
+                            15.45964233144,
+                            47.05903816514
+                        ],
+                        [
+                            15.45961615328,
+                            47.05906934846
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "indoor": "yes",
+                "level": "-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45892050000,
+                    47.05863280000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "53",
+                "capacity": "36",
+                "indoor": "room",
+                "level": "0",
+                "name": "HS i4",
+                "ref": "MDEG160G",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4021"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.46076101032,
+                            47.05800222511
+                        ],
+                        [
+                            15.46071941032,
+                            47.05805182511
+                        ],
+                        [
+                            15.46070921032,
+                            47.05806402511
+                        ],
+                        [
+                            15.46062691032,
+                            47.05803202511
+                        ],
+                        [
+                            15.46067871032,
+                            47.05797012511
+                        ],
+                        [
+                            15.46076101032,
+                            47.05800222511
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "307.32",
+                "capacity": "323",
+                "indoor": "room",
+                "level": "-1",
+                "name": "HS i13",
+                "ref": "ICK1120H",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=5787"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.45928920000,
+                            47.05876320000
+                        ],
+                        [
+                            15.45921730000,
+                            47.05873500000
+                        ],
+                        [
+                            15.45920820000,
+                            47.05874580000
+                        ],
+                        [
+                            15.45918640000,
+                            47.05873730000
+                        ],
+                        [
+                            15.45916460000,
+                            47.05872870000
+                        ],
+                        [
+                            15.45917410000,
+                            47.05871740000
+                        ],
+                        [
+                            15.45910350000,
+                            47.05868980000
+                        ],
+                        [
+                            15.45899220000,
+                            47.05881980000
+                        ],
+                        [
+                            15.45896230000,
+                            47.05885600000
+                        ],
+                        [
+                            15.45914890000,
+                            47.05892920000
+                        ],
+                        [
+                            15.45928920000,
+                            47.05876320000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "indoor": "yes",
+                "level": "-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45918640000,
+                    47.05873730000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "indoor": "yes",
+                "level": "1",
                 "wheelchair": "yes"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.45964233144,
-                    47.05903816514
+                    15.46077730000,
+                    47.05813800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "204",
+                "capacity": "222",
+                "indoor": "room",
+                "level": "1",
+                "name": "HS i7",
+                "ref": "MD01168F",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4030"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.46082060000,
+                            47.05798730000
+                        ],
+                        [
+                            15.46071400000,
+                            47.05811310000
+                        ],
+                        [
+                            15.46072530000,
+                            47.05811760000
+                        ],
+                        [
+                            15.46077730000,
+                            47.05813800000
+                        ],
+                        [
+                            15.46083440000,
+                            47.05816040000
+                        ],
+                        [
+                            15.46083890000,
+                            47.05816220000
+                        ],
+                        [
+                            15.46084670000,
+                            47.05816530000
+                        ],
+                        [
+                            15.46095330000,
+                            47.05803950000
+                        ],
+                        [
+                            15.46082060000,
+                            47.05798730000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "alt_name": "Seminarraum IAIK",
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "55.64",
+                "indoor": "room",
+                "level": "0",
+                "name": "IFEG042",
+                "ref": "IFEG042",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4844"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.45745270000,
+                            47.05827860000
+                        ],
+                        [
+                            15.45749980000,
+                            47.05829700000
+                        ],
+                        [
+                            15.45753760000,
+                            47.05831180000
+                        ],
+                        [
+                            15.45757480000,
+                            47.05832630000
+                        ],
+                        [
+                            15.45761520000,
+                            47.05827820000
+                        ],
+                        [
+                            15.45749310000,
+                            47.05823050000
+                        ],
+                        [
+                            15.45745270000,
+                            47.05827860000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "indoor": "yes",
+                "level": "-1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45903500000,
+                    47.05867850000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "level": "-1",
+                "wheelchair": "yes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45891840000,
+                    47.05833990000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "indoor": "yes",
+                "level": "0",
+                "wheelchair": "no"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.46083890000,
+                    47.05816220000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "yes",
+                "indoor": "yes",
+                "level": "2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45990172945,
+                    47.05867980000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "yes",
+                "indoor": "yes",
+                "level": "1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.46027820000,
+                    47.05868290000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "89",
+                "capacity": "48",
+                "indoor": "room",
+                "level": "1",
+                "name": "HS i6",
+                "ref": "MD01180F",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4024"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.46094203060,
+                            47.05820246853
+                        ],
+                        [
+                            15.46087223060,
+                            47.05817506854
+                        ],
+                        [
+                            15.46086063060,
+                            47.05817056854
+                        ],
+                        [
+                            15.46093503060,
+                            47.05808256856
+                        ],
+                        [
+                            15.46101643060,
+                            47.05811446855
+                        ],
+                        [
+                            15.46094203060,
+                            47.05820246853
+                        ]
+                    ]
                 ]
             }
         },
@@ -827,124 +753,6 @@
         {
             "type": "Feature",
             "properties": {
-                "alt_name": "Seminarraum IAIK",
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "55.64",
-                "indoor": "room",
-                "level": "0",
-                "name": "IFEG042",
-                "ref": "IFEG042",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4844"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.45745270000,
-                            47.05827860000
-                        ],
-                        [
-                            15.45749980000,
-                            47.05829700000
-                        ],
-                        [
-                            15.45753760000,
-                            47.05831180000
-                        ],
-                        [
-                            15.45757480000,
-                            47.05832630000
-                        ],
-                        [
-                            15.45761520000,
-                            47.05827820000
-                        ],
-                        [
-                            15.45749310000,
-                            47.05823050000
-                        ],
-                        [
-                            15.45745270000,
-                            47.05827860000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "76.2",
-                "indoor": "room",
-                "level": "1",
-                "name": "HF01092",
-                "ref": "HF01092",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2167"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.45961615328,
-                            47.05906934846
-                        ],
-                        [
-                            15.45953146784,
-                            47.05903558243
-                        ],
-                        [
-                            15.45960486566,
-                            47.05894815113
-                        ],
-                        [
-                            15.45966285058,
-                            47.05897074227
-                        ],
-                        [
-                            15.45969003967,
-                            47.05898133524
-                        ],
-                        [
-                            15.45966401916,
-                            47.05901233080
-                        ],
-                        [
-                            15.45964233144,
-                            47.05903816514
-                        ],
-                        [
-                            15.45961615328,
-                            47.05906934846
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "level": "0.5",
-                "wheelchair": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.45913960000,
-                    47.05819200000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "door": "hinged",
                 "indoor": "yes",
                 "level": "1",
@@ -953,8 +761,184 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.46070820000,
-                    47.05807560000
+                    15.46083440000,
+                    47.05816040000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "146.2",
+                "capacity": "117",
+                "indoor": "room",
+                "level": "0",
+                "name": "HS i1",
+                "ref": "HSEG058J",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2206"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.45903380000,
+                            47.05813110000
+                        ],
+                        [
+                            15.45893410000,
+                            47.05824900000
+                        ],
+                        [
+                            15.45905220000,
+                            47.05829540000
+                        ],
+                        [
+                            15.45913960000,
+                            47.05819200000
+                        ],
+                        [
+                            15.45915190000,
+                            47.05817750000
+                        ],
+                        [
+                            15.45903380000,
+                            47.05813110000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "180.92",
+                "capacity": "99",
+                "indoor": "room",
+                "level": "0",
+                "name": "HS i2",
+                "ref": "HFEG038J",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4207"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.45985320000,
+                            47.05904540000
+                        ],
+                        [
+                            15.45973560000,
+                            47.05899870000
+                        ],
+                        [
+                            15.45972350000,
+                            47.05899390000
+                        ],
+                        [
+                            15.45962090000,
+                            47.05911370000
+                        ],
+                        [
+                            15.45961140000,
+                            47.05912490000
+                        ],
+                        [
+                            15.45974110000,
+                            47.05917640000
+                        ],
+                        [
+                            15.45985320000,
+                            47.05904540000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ref": "SZ02057",
+                "area": "yes",
+                "amenity": "community_centre",
+                "level": "2",
+                "indoor": "room",
+                "room": "lecture_hall",
+                "alt_name": "Studienzentrum",
+                "name": "SZ02057"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.45993120000,
+                            47.05869880000
+                        ],
+                        [
+                            15.45999895748,
+                            47.05872214053
+                        ],
+                        [
+                            15.46002779122,
+                            47.05873081997
+                        ],
+                        [
+                            15.46009752866,
+                            47.05874635159
+                        ],
+                        [
+                            15.46012602713,
+                            47.05875229016
+                        ],
+                        [
+                            15.46019844677,
+                            47.05876005597
+                        ],
+                        [
+                            15.46022761580,
+                            47.05876211162
+                        ],
+                        [
+                            15.46021621641,
+                            47.05882035516
+                        ],
+                        [
+                            15.46018738266,
+                            47.05881921313
+                        ],
+                        [
+                            15.46011563357,
+                            47.05880962008
+                        ],
+                        [
+                            15.46008679982,
+                            47.05880550878
+                        ],
+                        [
+                            15.46001639184,
+                            47.05878837833
+                        ],
+                        [
+                            15.45998722281,
+                            47.05877969889
+                        ],
+                        [
+                            15.45991950000,
+                            47.05875750000
+                        ],
+                        [
+                            15.45993120000,
+                            47.05869880000
+                        ]
+                    ]
                 ]
             }
         },
@@ -1025,8 +1009,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.46083890000,
-                    47.05816220000
+                    15.46071470000,
+                    47.05805250000
                 ]
             }
         },
@@ -1035,13 +1019,13 @@
             "properties": {
                 "door": "hinged",
                 "indoor": "yes",
-                "level": "-1"
+                "wheelchair": "yes"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.45903500000,
-                    47.05867850000
+                    15.45962090000,
+                    47.05911370000
                 ]
             }
         },
@@ -1064,107 +1048,44 @@
         {
             "type": "Feature",
             "properties": {
-                "alt_name": "LENZING Hörsaal",
                 "amenity": "community_centre",
                 "area": "yes",
-                "area_m2": "89",
-                "capacity": "80",
+                "area_m2": "76",
+                "capacity": "36",
                 "indoor": "room",
-                "level": "0",
-                "name": "HS i3",
-                "ref": "MDEG180G",
+                "level": "-1",
+                "name": "HS i14",
+                "ref": "HSK1008",
                 "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4015"
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2202"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            15.46092565447,
-                            47.05808292286
+                            15.45880640000,
+                            47.05829580000
                         ],
                         [
-                            15.46085355447,
-                            47.05816802286
+                            15.45880030000,
+                            47.05829340000
                         ],
                         [
-                            15.46085535447,
-                            47.05816892286
+                            15.45864920000,
+                            47.05823380000
                         ],
                         [
-                            15.46086405447,
-                            47.05817212286
+                            15.45861280000,
+                            47.05827670000
                         ],
                         [
-                            15.46091015447,
-                            47.05819022286
+                            15.45877000000,
+                            47.05833870000
                         ],
                         [
-                            15.46093675447,
-                            47.05820082286
-                        ],
-                        [
-                            15.46101115447,
-                            47.05811282286
-                        ],
-                        [
-                            15.46101715447,
-                            47.05810582286
-                        ],
-                        [
-                            15.46093395447,
-                            47.05807312287
-                        ],
-                        [
-                            15.46092565447,
-                            47.05808292286
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "community_centre",
-                "area": "yes",
-                "area_m2": "146.2",
-                "capacity": "117",
-                "indoor": "room",
-                "level": "0",
-                "name": "HS i1",
-                "ref": "HSEG058J",
-                "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2206"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            15.45903380000,
-                            47.05813110000
-                        ],
-                        [
-                            15.45893410000,
-                            47.05824900000
-                        ],
-                        [
-                            15.45905220000,
-                            47.05829540000
-                        ],
-                        [
-                            15.45913960000,
-                            47.05819200000
-                        ],
-                        [
-                            15.45915190000,
-                            47.05817750000
-                        ],
-                        [
-                            15.45903380000,
-                            47.05813110000
+                            15.45880640000,
+                            47.05829580000
                         ]
                     ]
                 ]
@@ -1175,62 +1096,62 @@
             "properties": {
                 "door": "hinged",
                 "indoor": "yes",
-                "level": "1",
                 "wheelchair": "yes"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.46077730000,
-                    47.05813800000
+                    15.45964233144,
+                    47.05903816514
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
+                "alt_name": "Hörsaal ISW",
                 "amenity": "community_centre",
                 "area": "yes",
-                "area_m2": "180.92",
-                "capacity": "99",
+                "area_m2": "97.95",
+                "capacity": "60",
                 "indoor": "room",
                 "level": "0",
-                "name": "HS i2",
-                "ref": "HFEG038J",
+                "name": "MFEG210",
+                "ref": "MFEG210",
                 "room": "lecture_hall",
-                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=4207"
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2088"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            15.45985320000,
-                            47.05904540000
+                            15.45984390000,
+                            47.05782170000
                         ],
                         [
-                            15.45973560000,
-                            47.05899870000
+                            15.45985950000,
+                            47.05782780000
                         ],
                         [
-                            15.45972350000,
-                            47.05899390000
+                            15.45990970000,
+                            47.05784740000
                         ],
                         [
-                            15.45962090000,
-                            47.05911370000
+                            15.45995360000,
+                            47.05786460000
                         ],
                         [
-                            15.45961140000,
-                            47.05912490000
+                            15.45988880000,
+                            47.05794140000
                         ],
                         [
-                            15.45974110000,
-                            47.05917640000
+                            15.45977910000,
+                            47.05789850000
                         ],
                         [
-                            15.45985320000,
-                            47.05904540000
+                            15.45984390000,
+                            47.05782170000
                         ]
                     ]
                 ]
@@ -1256,14 +1177,78 @@
             "type": "Feature",
             "properties": {
                 "door": "hinged",
-                "level": "-1",
+                "indoor": "yes",
+                "level": "1",
                 "wheelchair": "yes"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.45891840000,
-                    47.05833990000
+                    15.46070820000,
+                    47.05807560000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "alt_name": "SIEMENS Hörsaal",
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "117.78",
+                "capacity": "87",
+                "indoor": "room",
+                "level": "-1",
+                "name": "HS i11",
+                "ref": "ICK1002H",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=5785"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.45897770000,
+                            47.05864110000
+                        ],
+                        [
+                            15.45895090000,
+                            47.05863060000
+                        ],
+                        [
+                            15.45894190000,
+                            47.05864120000
+                        ],
+                        [
+                            15.45892050000,
+                            47.05863280000
+                        ],
+                        [
+                            15.45889910000,
+                            47.05862430000
+                        ],
+                        [
+                            15.45890880000,
+                            47.05861290000
+                        ],
+                        [
+                            15.45888100000,
+                            47.05860200000
+                        ],
+                        [
+                            15.45877070000,
+                            47.05873200000
+                        ],
+                        [
+                            15.45886800000,
+                            47.05877030000
+                        ],
+                        [
+                            15.45897770000,
+                            47.05864110000
+                        ]
+                    ]
                 ]
             }
         },
@@ -1272,14 +1257,90 @@
             "properties": {
                 "door": "hinged",
                 "indoor": "yes",
-                "level": "0.5",
-                "wheelchair": "no"
+                "wheelchair": "yes"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.45973560000,
-                    47.05899870000
+                    15.45966401916,
+                    47.05901233080
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "indoor": "yes",
+                "level": "1",
+                "wheelchair": "yes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.46088770000,
+                    47.05818110000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "community_centre",
+                "area": "yes",
+                "area_m2": "57.6",
+                "capacity": "25",
+                "indoor": "room",
+                "level": "-1",
+                "name": "HS i15",
+                "ref": "HSK1018",
+                "room": "lecture_hall",
+                "url": "https://online.tugraz.at/tug_online/wbRaum.editRaum?pRaumNr=2196"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            15.45880640000,
+                            47.05829580000
+                        ],
+                        [
+                            15.45891840000,
+                            47.05833990000
+                        ],
+                        [
+                            15.45893220000,
+                            47.05834540000
+                        ],
+                        [
+                            15.45889580000,
+                            47.05838820000
+                        ],
+                        [
+                            15.45877000000,
+                            47.05833870000
+                        ],
+                        [
+                            15.45880640000,
+                            47.05829580000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "level": "-1",
+                "wheelchair": "yes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.45880030000,
+                    47.05829340000
                 ]
             }
         },
@@ -1335,21 +1396,6 @@
                             47.05826400000
                         ]
                     ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "indoor": "yes",
-                "wheelchair": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.45962090000,
-                    47.05911370000
                 ]
             }
         }
