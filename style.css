@@ -66,3 +66,14 @@ body,
   min-width: 3cm;
   z-index: 100;
 }
+.external {
+  background: white;
+  border-radius: 4px;
+  border: 2px solid rgba(0,0,0,0.2);
+  height: 30px;
+  padding: 0 8px;
+}
+.external a {
+  text-decoration: none;
+  font-size:1.5em;
+}
